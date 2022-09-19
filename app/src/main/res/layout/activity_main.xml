@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BAEFED"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    android:elevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="20dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <TextView
+                        android:gravity="center"
+                        android:text="Q.No. : "
+
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:textColor="#096C0D"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/questionNo"
+                        android:gravity="center"
+                        android:text="1"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:textColor="#096C0D"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="20dp"
+                android:layout_weight="1"
+
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <TextView
+                        android:gravity="center"
+                        android:text="Score : "
+
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:textColor="#096C0D"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/score"
+                        android:gravity="center"
+                        android:text="1"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:textColor="#096C0D"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="20dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+                <TextView
+                    android:id="@+id/maxScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:text="MaxScore : +1"
+                    android:textColor="#091E6C"
+                    android:textStyle="bold"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="20dp"
+                android:layout_weight="1"
+
+                android:layout_margin="10dp">
+                <TextView
+                    android:id="@+id/minScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:textColor="#AA1409"
+                    android:gravity="center"
+                    android:text="MinScore : -1"
+                    android:textStyle="bold"
+                    />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        android:elevation="20dp"
+        >
+        <TextView
+            android:id="@+id/questionBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#92F3D2"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="Question"
+            android:textSize="22sp" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            android:elevation="20dp"
+            >
+            <TextView
+                android:id="@+id/option1"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#82BDFD"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:onClick="setDataA"
+                android:text="option A"
+
+                android:textSize="18sp" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            android:elevation="20dp"
+            >
+            <TextView
+                android:id="@+id/option2"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick="setDataB"
+                android:background="#82BDFD"
+                android:textColor="@color/black"
+
+                android:text="option B"
+                android:textSize="18sp" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            android:elevation="20dp"
+            >
+            <TextView
+                android:id="@+id/option3"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick="setDataA"
+                android:text="option A"
+                android:background="#82BDFD"
+                android:textColor="@color/black"
+
+                android:textSize="18sp" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            android:elevation="20dp"
+            >
+            <TextView
+                android:id="@+id/option4"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick="setDataB"
+                android:text="option B"
+                android:background="#82BDFD"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1"
+        android:layout_margin="1dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+
+                android:textStyle="bold|normal"
+                android:textColor="#3D7791"
+                android:background="#F3CCCC"
+                android:textSize="14sp"
+
+                android:text="Reset"
+                android:onClick="reset"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold|italic"
+                android:textSize="18sp"
+                android:layout_marginBottom="5dp"
+
+                android:text="Made and Managed By : "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+
+                android:textStyle="bold|normal"
+                android:textColor="#3D7791"
+                android:background="#FAFAFA"
+                android:textSize="14sp"
+
+                android:text="Mohd. Haarish Khan"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

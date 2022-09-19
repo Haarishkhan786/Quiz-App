@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">quizGame</string>
+    <string name="greetings">Congratulations you guessed it right</string>
+</resources>
